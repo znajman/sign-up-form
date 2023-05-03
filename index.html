@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="sidepanel">
+        <div class="logo">Logo</div>
+        <div class="credit">Credit</div>
+    </div>
+    <div class="main-form">
+        <div class="form-title">Sign up now to get started.</div>
+        <form action="/index.html" method="post">
+            <legend>Let's do this!</legend>
+            <div>
+                <label for="first-name">First name</label>
+                <input type="text" name="first-name" id="first-name">
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="tel-number">Phone number</label>
+                <input type="tel" name="tel-number" id="tel-number">
+            </div>
+            <div>
+                <label for="pwd">Password</label>
+                <input type="password" name="pwd" id="pwd">
+                <label for="pwd-c">Confirm password</label>
+                <input type="password" name="pwd" id="pwd-c">
+            </div>
+        </form>
+        <button type="submit">Create account</button>
+        <div calss="login">Already have an account?<span>Log in</span></div>
+    </div>
 </body>
 </html>
