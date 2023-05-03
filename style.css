@@ -93,10 +93,16 @@ form>div {
 }
 
 div>input {
+    padding: 8px 12px;
     font-size: 20px;
     border-radius: 8px;
     border: 1px solid rgb(150, 150, 150);
     width: 500px;
+}
+
+div>input:focus {
+    box-shadow: 8px 8px 5px -5px #333;
+    border: 1px solid salmon;
 }
 
 div>input:not(:focus):not(:placeholder-shown):invalid {
