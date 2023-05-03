@@ -41,6 +41,8 @@ body {
 }
 
 .main-form {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(243, 243, 243);
     color: rgb(33, 33, 53);
     flex:2;
@@ -56,7 +58,7 @@ body {
     padding-bottom: 20px;
     padding-left: 20px;
     font-family: 'Poppins', sans-serif;
-    font-size: 36px;
+    font-size: 28px;
 }
 
 form {
@@ -65,7 +67,6 @@ form {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    height: 40%;
 }
 
 form>legend {
@@ -133,6 +134,7 @@ div>input:not(:focus):not(:placeholder-shown):invalid {
 }
 
 .login {
+    flex: 1;
     padding-top: 20px;
     padding-left: 20px;
     font-family: 'Poppins', sans-serif;
