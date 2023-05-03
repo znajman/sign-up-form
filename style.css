@@ -2,13 +2,85 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 .side-panel {
     flex:1;
-    width: 200px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+
 }
 
+.logo {
+    flex:1;
+}
+
+
 .main-form {
+    background-color: rgb(243, 243, 243);
+    color: rgb(33, 33, 53);
     flex:2;
+    
+}
+
+.form-title {
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 40px;
+}
+
+form {
+    background-color: rgb(253, 253, 253);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+form>legend {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+}
+
+form>div {
+    width: 100%;
+    min-height: 40px;
+    flex:40%;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    opacity: 70%;
+}
+
+div>input {
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(150, 150, 150);
+}
+
+div>input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: rgb(173, 2, 2);
+}
+
+.submit>input {
+    font-size: 24px;
+    width: 200px;
+    height: 50px;
+    padding: 8px 12px;
+    color: whitesmoke;
+    background-color: rgb(16, 112, 80);
+    border-radius: 12px;
+    border: 0;
 }

@@ -6,36 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"></head>
 <body>
-    <div class="sidepanel">
+    <div class="side-panel">
         <div class="logo">Logo</div>
         <div class="credit">Credit</div>
     </div>
     <div class="main-form">
-        <div class="form-title">Sign up now to get started.</div>
-        <form action="/index.html" method="post">
+        <div class="form-title">
+            <p>
+                Sign up
+                <em>now</em>
+                to get started.        
+            </p>
+        </div>
+        <form action="./index.html" method="post">
             <legend>Let's do this!</legend>
             <div>
                 <label for="first-name">First name</label>
-                <input type="text" name="first-name" id="first-name">
+                <input type="text" name="first-name" id="first-name" placeholder="First name" required>
+            </div>
+            <div>
                 <label for="last-name">Last name</label>
-                <input type="text" name="last-name" id="last-name">
+                <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
             </div>
             <div>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="123@gmail.com" required>
+            </div>
+            <div>
                 <label for="tel-number">Phone number</label>
                 <input type="tel" name="tel-number" id="tel-number">
             </div>
             <div>
                 <label for="pwd">Password</label>
-                <input type="password" name="pwd" id="pwd">
-                <label for="pwd-c">Confirm password</label>
-                <input type="password" name="pwd" id="pwd-c">
+                <input type="password" name="pwd" id="pwd" placeholder="Password" required>
             </div>
+            <div>
+                <label for="pwd-c">Confirm password</label>
+                <input type="password" name="pwd" id="pwd-c" placeholder="Confirm password" required>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Create account">
+        </div>
         </form>
-        <button type="submit">Create account</button>
         <div calss="login">Already have an account?<span>Log in</span></div>
     </div>
 </body>
